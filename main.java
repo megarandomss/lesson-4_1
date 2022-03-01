@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class main {
 
     public static void main(String[] args) {
@@ -28,13 +29,12 @@ public class main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите Ваше имя: ");
         String name = scanner.nextLine();
-        if (name.length() > 0)
-        {
+        if (name.length() > 0) {
             System.out.println("Привет, " + name + "!");
-        }
-        else {
+        } else {
             System.out.println("Привет, неизвестный!");
         }
-}}
+    }
+}
 
 

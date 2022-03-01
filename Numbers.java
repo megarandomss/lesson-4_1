@@ -1,5 +1,8 @@
 // Цифры числа
+
 import java.util.Scanner;
+
+import static java.lang.Math.abs;
 
 public class Numbers {
 
@@ -21,6 +24,10 @@ public class Numbers {
         int sum2 = 0; // сумма четных цифр
         int b = 0;
         int x = 0;
+
+        if (a < 0){
+            a = abs(a);
+        }
 
         while (a != 0) {
             b = a % 10;

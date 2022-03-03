@@ -18,24 +18,24 @@ public class AVG {
             a = b;
             b = x;
         }
-        int amount = b - a + 1; // находим количество чисел в диапазоне
-        int sum1 = 0;
-        int sum2 = 0;
-        int amountInteger = 0; // счетчик целых чисел
+        int count = b - a + 1; // находим количество чисел в диапазоне
+        int sum = 0;
+        int sumEvenNumbers = 0;
+        int countEvenNumbers = 0; // счетчик целых чисел
 
-        for (int i = 0; i <= amount; i++) {
+        for (int i = 0; i <= count; i++) {
             if (a % 2 == 0) { // если число целое, увеличиваем счетчик r2 и считаем сумму целых чисел sum2
-                amountInteger = amountInteger + 1;
-                sum2 = sum2 + a;
+                countEvenNumbers = countEvenNumbers + 1;
+                sumEvenNumbers = sumEvenNumbers + a;
             }
-            sum1 = sum1 + a;
+            sum = sum + a;
             a = a + 1;
 
         }
 
-        double avg1 = (double) sum1 / amount;
+        double avg1 = (double) sum / count;
         System.out.println("Среднее арифметическое = " + avg1);
-        double avg2 = (double) sum2 / amountInteger;
+        double avg2 = (double) sumEvenNumbers / countEvenNumbers;
         System.out.println("Среднее арифметическое четных чисел = " + avg2);
 
     }

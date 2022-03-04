@@ -13,18 +13,18 @@ public class AVG {
         System.out.println("Введите второе число: ");
         int b = scanner2.nextInt();
 
-        if (a > b) { //проверка, чтобы диапазон шел по возрастающей
+        if (a > b) {
             int x = a;
             a = b;
             b = x;
         }
-        int count = b - a + 1; // находим количество чисел в диапазоне
+        int count = b - a + 1;
         int sum = 0;
         int sumEvenNumbers = 0;
-        int countEvenNumbers = 0; // счетчик целых чисел
+        int countEvenNumbers = 0;
 
-        for (int i = 0; i <= count; i++) {
-            if (a % 2 == 0) { // если число целое, увеличиваем счетчик r2 и считаем сумму целых чисел sum2
+        for (int i = 0; i < count; i++) {
+            if (a % 2 == 0) {
                 countEvenNumbers = countEvenNumbers + 1;
                 sumEvenNumbers = sumEvenNumbers + a;
             }
